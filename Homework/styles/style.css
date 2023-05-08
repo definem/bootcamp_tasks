@@ -1,0 +1,299 @@
+*::after,
+*::before,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Segoe bold";
+  src: url("../assets/fonts/segoe-font/Segoe\ UI\ Bold.ttf");
+}
+
+@font-face {
+  font-family: "Segoe regular";
+  src: url("../assets/fonts/segoe-font/Segoe\ UI.ttf");
+}
+
+body {
+  font-family: "Segoe bold";
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/*------------------Header-start--------------*/
+
+header {
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+}
+
+.nav__logo {
+  font-size: 60px;
+  text-decoration: none;
+  color: #4579cb;
+}
+
+.nav__list {
+  display: flex;
+  column-gap: 60px;
+  list-style-type: none;
+  align-items: center;
+}
+
+.nav__list--item {
+  font-size: 16px;
+}
+
+.nav__list--item-link {
+  color: #666666;
+  text-decoration: none;
+}
+
+.btn {
+  width: 170px;
+  height: 50px;
+  background-color: #4579cb;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+/* ------------------Header-end-------------- */
+
+/*------------------Hero-start--------------*/
+
+#intro {
+  min-height: 771px;
+  width: 100%;
+  background-image: url("../assets/images/Union.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+}
+
+.wrapper {
+  max-width: 1046px;
+  text-align: center;
+  margin: 126px auto;
+}
+
+.intro__title {
+  font-size: 58px;
+  color: #474747;
+  line-height: 78px;
+  letter-spacing: 0, 002rem;
+}
+
+.intro__title span {
+  color: #4579cb;
+}
+
+.intro__text {
+  color: #6666;
+  font-weight: 400 !important;
+  font-size: 16px;
+  max-width: 828px;
+  text-align: center;
+  margin: 38px auto;
+}
+
+.intro__btn {
+  width: 170px;
+  height: 50px;
+  background: #4579cb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 8px;
+  margin: 38px auto 21px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.wrapper a span {
+  color: #666666;
+  text-decoration: none;
+  top: -4px;
+  font-family: "Segoe regular";
+}
+
+/*------------------Hero-end--------------*/
+
+/*------------------Service-start--------------*/
+
+#service {
+  min-height: 265px;
+  width: 100%;
+  text-align: center;
+}
+
+.service__title {
+  margin-bottom: 20px;
+  font-size: 26px;
+  color: #666666;
+}
+
+.service__text {
+  font-family: "Segoe regular";
+  max-width: 875px;
+  margin: 0 auto 46px;
+  color: #666666;
+}
+
+.slider {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px auto;
+  flex-wrap: wrap;
+}
+
+.slider img {
+  filter: grayscale(1);
+  transition: all 0.3s ease;
+}
+
+.slider img:hover {
+  filter: grayscale(0);
+}
+
+.dots {
+  background-color: #898c925d;
+  border: none;
+}
+
+.dot span {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.active_dot {
+  background-color: #4579cb;
+}
+
+/* DRY -> DON'T REPEAT YOURSELF */
+
+.btn__hover:hover {
+  background-color: #fff !important;
+  border: 2px solid #4579cb !important;
+  color: #4579cb !important;
+}
+
+/*------------------Service-end--------------*/
+
+/*------------------Third section-start--------------*/
+
+.st-section {
+  /* display: flex; */
+  margin-top: 100px;
+}
+
+.st-container {
+  display: flex;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.st-img {
+  object-fit: cover;
+  width: 456px;
+  height: 418px;
+}
+
+.section-text {
+  font-weight: 250 !important;
+  font-size: 23px;
+  width: 1104.41px;
+  height: 437.3px;
+  right: 0px;
+  margin-left: 100px;
+  margin-top: 100px;
+}
+
+.st-title {
+  width: 558px;
+}
+
+.st-text {
+  font-family: "Segoe regular";
+  font-weight: 100;
+  font-size: 17px;
+  line-height: 24px;
+  margin-top: 24px;
+  color: #666666;
+  width: 527px;
+}
+
+.st-btn {
+  width: 170px;
+  height: 50px;
+  background: #4579cb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 15px;
+  margin: 38px auto 21px;
+  border: none;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+/*------------------Third section-end--------------*/
+
+/*------------------Fourth section-start--------------*/
+
+.ft-container {
+  display: flex;
+  min-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+  box-sizing: border-box;
+  margin-top: 120px;
+  margin-left: 50px;
+}
+
+.ft-texts {
+  /* margin-top: 158px; */
+  font-weight: 250 !important;
+  font-size: 23px;
+  width: 1104.41px;
+  height: 437.3px;
+  right: 0px;
+}
+
+.ft-text {
+  font-family: "Segoe regular";
+  font-weight: 100;
+  font-size: 17px;
+  line-height: 24px;
+  margin-top: 24px;
+  color: #666666;
+  width: 527px;
+}
+
+.ft-img {
+  object-fit: cover;
+  width: 456px;
+  height: 384px;
+}
