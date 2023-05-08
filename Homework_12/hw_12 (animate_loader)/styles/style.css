@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  margin-left: 100px;
+  margin-top: 20px;
+  background: #333;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.nav {
+  margin-top: 60px;
+  margin-left: 590px;
+  font-size: 70px;
+  color: rgb(233, 17, 17);
+}
+
+.txt1 {
+  margin-top: 100px;
+  margin-left: 400px;
+  font-weight: normal;
+  font-size: 30px;
+  color: gray;
+}
+
+.txt2 {
+  margin-top: 25px;
+  margin-left: 450px;
+  font-weight: normal;
+  font-size: 30px;
+  color: rgb(155, 147, 147);
+}
+
+.loader {
+  margin-top: 50px;
+  margin-left: 450px;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader h2 {
+  font-family: serif;
+  font-size: 30px;
+  font-weight: 500;
+  color: rgb(155, 147, 147);
+}
+
+.loader span:nth-child(1) {
+  border-radius: 34% 66% 65% 35% / 35% 32% 68% 65%;
+}
+
+.loader span:nth-child(2) {
+  animation-direction: reverse;
+  border-radius: 44% 56% 34% 66% / 68% 61% 39% 32%;
+}
+
+.loader span:nth-child(3) {
+  animation-duration: 3s;
+  border-radius: 75% 25% 65% 35% / 68% 73% 27% 32%;
+}
+
+.loader span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid white;
+  pointer-events: none;
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  0% {
+    transform: rotate(360deg);
+  }
+}
